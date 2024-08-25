@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css')}}">
+</head>
+<body>
+    <div class="form">
+        <div class="form-1">
+            <div class="form-2">
+                <h1>Prediction Result</h1>
+                <img src="{{ url_for('static', filename='images/' ~ image_file) }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">   
+                <h2>Predicted Plant: {{ prediction }}</h2>
+   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
